@@ -1,0 +1,91 @@
+
+
+$color-default:#da564f;
+$color-primary:#eb7870;
+$color-secondary:#721d18;
+$color-base:hsla(0, 0, 0, 0.6);
+
+$color-default-lighte : lighte(var(--color-default), 4.2);
+$color-default-satur : satur(var(--color-default), 0.6);
+
+$color-primary-lighte : lighte(var(--color-primary), 4.2);
+$color-primary-satur : satur(var(--color-primary), 0.6);
+
+$color-secondary-lighte : lighte(var(--color-secondary), 2.7);
+$color-secondary-satur : satur(var(--color-secondary), 1.2);
+
+$zirzar_color: #6e2622;
+/*
+$zirzar_color1: #6e2622;
+$zirzar_color2: #82302c;
+$zirzar_color3: #88302c;
+$zirzar_color4: #941f17;
+$zirzar_color5: #da564f;
+$zirzar_color6: #721d18;
+*/
+
+$zirzar_color11: lighte(var(--color-zirzar), 1);
+
+$zirzar_color1: lighte(var(--color-zirzar), 0.8);
+$zirzar_color2: lighte(var(--color-zirzar), 0.9);
+$zirzar_color3: lighte(var(--color-zirzar), 1.1);
+$zirzar_color4: satur(var(--color-zirzar), 1.2);
+$zirzar_color5: lighte(var(--color-zirzar), 1.9);
+$zirzar_color6: satur(var(--color-zirzar), 1.3);
+
+$zirzar_menu_right_mar: 18%;
+
+:root{
+--color-base: #{$color-base};
+@include defineColorHSL(--color-default, $color-default);
+--color-default-lighte : #{$color-default-lighte};
+--color-default-satur : #{$color-default-satur};
+@include defineColorHSL(--color-primary, $color-primary);
+--color-primary-lighte : #{$color-primary-lighte};
+--color-primary-satur : #{$color-primary-satur};
+@include defineColorHSL(--color-secondary, $color-secondary);
+--color-secondary-lighte : #{$color-secondary-lighte};
+--color-secondary-satur : #{$color-secondary-satur};
+
+@include defineColorHSL(--color-zirzar, $zirzar_color);
+--color-zirzar1: #{$zirzar_color1};
+--color-zirzar2: #{$zirzar_color2};
+--color-zirzar3: #{$zirzar_color3};
+--color-zirzar4: #{$zirzar_color4};
+--color-zirzar5: #{$zirzar_color5};
+--color-zirzar6: #{$zirzar_color6};
+}
+
+.dark-mode{
+
+    @include defineColorHSL(--color-default, $color-secondary);
+    --color-default-lighte : #{$color-secondary-satur};
+    --color-default-satur : #{$color-secondary-lighte};
+    @include defineColorHSL(--color-primary, $color-primary);
+    --color-primary-lighte : #{$color-primary-satur};
+    --color-primary-satur : #{$color-primary-lighte};
+    @include defineColorHSL(--color-secondary, $color-default);
+    --color-secondary-lighte : #{$color-default-satur};
+    --color-secondary-satur : #{$color-default-lighte};
+
+    .windowbg:nth-of-type(odd), .bg.odd {
+      background: var(--color-default);
+    }
+    .information{
+      border:none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    @include defineColorHSL(--color-default, $color-secondary);
+    --color-default-lighte : #{$color-secondary-satur};
+    --color-default-satur : #{$color-secondary-lighte};
+    @include defineColorHSL(--color-primary, $color-primary);
+    --color-primary-lighte : #{$color-primary-satur};
+    --color-primary-satur : #{$color-primary-lighte};
+    @include defineColorHSL(--color-secondary, $color-default);
+    --color-secondary-lighte : #{$color-default-satur};
+    --color-secondary-satur : #{$color-default-lighte};
+  }
+}
