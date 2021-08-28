@@ -9,7 +9,7 @@ class Bese {
 		Tema::yukle();
 
 
-		if($settings['bese_allow_color_select'] != 0){
+		if(!empty($settings['bese_allow_color_select']) != 0){
 			add_integration_function('integrate_load_theme', self::class.'::addCustomColorVars', false);
 		}
 		add_integration_function('integrate_pre_javascript_output', self::class.'::addJavascriptVars', false);
