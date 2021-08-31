@@ -26,4 +26,6 @@ $txt['default_bese_primary'] = '#eb7870';
 $txt['default_bese_secondary'] = '#721d18';
 $txt['color_zirzar1'] = '#6e2622';
 
+$txt['bese_color_zirzar'] = 'bese_color_zirzar';
+
 ?>

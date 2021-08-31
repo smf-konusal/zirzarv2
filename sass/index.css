@@ -61,6 +61,16 @@ $zirzar_color6: #721d18;
   --color-secondary: hsl(var(--color-secondary-h), var(--color-secondary-s), var(--color-secondary-l));
   --color-secondary-lighte: hsl(var(--color-default-h), calc(var(--color-default-s) * 0.6), var(--color-default-l));
   --color-secondary-satur: hsl(var(--color-default-h), var(--color-default-s), calc(var(--color-default-l) * 4.2));
+  --color-zirzar-h: 3.15789deg;
+  --color-zirzar-s: 52.77778%;
+  --color-zirzar-l: 28.23529%;
+  --color-zirzar: hsl(var(--color-zirzar-h), var(--color-zirzar-s), var(--color-zirzar-l));
+  --color-zirzar1: hsl(var(--color-zirzar-h), var(--color-zirzar-s), calc(var(--color-zirzar-l) * 0.4));
+  --color-zirzar2: hsl(var(--color-zirzar-h), var(--color-zirzar-s), calc(var(--color-zirzar-l) * 0.5));
+  --color-zirzar3: hsl(var(--color-zirzar-h), var(--color-zirzar-s), calc(var(--color-zirzar-l) * 0.6));
+  --color-zirzar4: hsl(var(--color-zirzar-h), calc(var(--color-zirzar-s) * 0.7), var(--color-zirzar-l));
+  --color-zirzar5: hsl(var(--color-zirzar-h), var(--color-zirzar-s), calc(var(--color-zirzar-l) * 1.1));
+  --color-zirzar6: hsl(var(--color-zirzar-h), calc(var(--color-zirzar-s) * 0.5), var(--color-zirzar-l));
 }
 
 .dark-mode .windowbg:nth-of-type(odd), .dark-mode .bg.odd {
@@ -834,7 +844,7 @@ h3.titlebg, h4.titlebg, .titlebg, h3.subbg, h4.subbg, .subbg {
 .info .subject {
   font-weight: 600;
   font-size: 1.1em;
-  color: var(--color-default-lighte);
+  color: var(--color-zirzar2);
 }
 
 /* Those classes are sharing exact same gradient. */
@@ -1671,7 +1681,7 @@ h3.titlebg, h4.titlebg, .titlebg, h3.subbg, h4.subbg, .subbg {
 #wrapper {
   clear: both;
   background: var(--color-secondary-lighte);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-zirzar3);
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14);
 }

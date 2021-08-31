@@ -74,18 +74,16 @@ function template_init()
 
 	// Load themes Settings Bese
 	require_once __DIR__."/tema/huu.php";
-
-	loadLanguage('ThemeStrings');
 	
 	if (!defined('DEFAULT_BESE_COLOR')){
-		define('DEFAULT_BESE_COLOR', $txt['default_bese_color']);
+		define('DEFAULT_BESE_COLOR', '#da564f');
 	}
 
 	if (!defined('DEFAULT_BESE_COLOR_PRIMARY')){
-		define('DEFAULT_BESE_COLOR_PRIMARY', $txt['default_bese_primary']);
+		define('DEFAULT_BESE_COLOR_PRIMARY', '#eb7870');
 	}
 	if (!defined('DEFAULT_BESE_COLOR_SECONDARY')){
-		define('DEFAULT_BESE_COLOR_SECONDARY', $txt['default_bese_secondary']);
+		define('DEFAULT_BESE_COLOR_SECONDARY', '#721d18');
 	}
 
 
@@ -424,9 +422,9 @@ function template_body_below()
 			</div><!-- #main_content_section -->
 		</div><!-- #content_section -->';
 
-	echo '
-	</div><!-- #wrapper -->
-</div><!-- #footerfix -->';
+echo '
+	 </div><!-- #sa -->
+	</div><!-- #sag -->';
 
 	// Show the footer with copyright, terms and help links.
 	echo '
@@ -449,10 +447,10 @@ function template_body_below()
 		</div>
 	</div><!-- #footer -->';
 
-		echo '
-	 </div>
-	 </div>
-	</div>';
+
+	echo '
+	</div><!-- #wrapper -->
+</div><!-- #footerfix -->';
 
 }
 

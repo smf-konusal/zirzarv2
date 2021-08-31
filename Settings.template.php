@@ -259,7 +259,7 @@ function template_settings()
 		),
 		array(
 			'id' => 'bese_color_zirzar',
-			'label' => $txt['bese_color_secondary'],
+			'label' => $txt['bese_color_zirzar'],
 			'description' => str_replace('%color%', $txt['color_zirzar1'], $txt['bese_color_defaulte']),
 			'default_value' => $txt['color_zirzar1'],
 			'type' => 'color',

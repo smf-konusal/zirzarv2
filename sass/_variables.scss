@@ -33,6 +33,14 @@ $zirzar_color4: satur(var(--color-zirzar), 1.2);
 $zirzar_color5: lighte(var(--color-zirzar), 1.9);
 $zirzar_color6: satur(var(--color-zirzar), 1.3);
 
+
+$zirzar_color1_dark: lighte(var(--color-zirzar), 0.4);
+$zirzar_color2_dark: lighte(var(--color-zirzar), 0.5);
+$zirzar_color3_dark: lighte(var(--color-zirzar), 0.6);
+$zirzar_color4_dark: satur(var(--color-zirzar), 0.7);
+$zirzar_color5_dark: lighte(var(--color-zirzar), 1.1);
+$zirzar_color6_dark: satur(var(--color-zirzar), 0.5);
+
 $zirzar_menu_right_mar: 18%;
 
 :root{
@@ -67,6 +75,13 @@ $zirzar_menu_right_mar: 18%;
     @include defineColorHSL(--color-secondary, $color-default);
     --color-secondary-lighte : #{$color-default-satur};
     --color-secondary-satur : #{$color-default-lighte};
+    @include defineColorHSL(--color-zirzar, $zirzar_color);
+    --color-zirzar1: #{$zirzar_color1_dark};
+    --color-zirzar2: #{$zirzar_color2_dark};
+    --color-zirzar3: #{$zirzar_color3_dark};
+    --color-zirzar4: #{$zirzar_color4_dark};
+    --color-zirzar5: #{$zirzar_color5_dark};
+    --color-zirzar6: #{$zirzar_color6_dark};
 
     .windowbg:nth-of-type(odd), .bg.odd {
       background: var(--color-default);

@@ -9,7 +9,7 @@ $(document).on('click', '#cssmenu li.has-sub a span', function(){
 		window.location = localStorage.getItem('donurl');
 	}
 
-	if($(this).attr('class') != 'textmenu'){
+	if($(this).attr('class') == 'holder'){
 		hrefkaldir.removeAttr('href');
 
 		var element = hrefkaldir.parent('li');
